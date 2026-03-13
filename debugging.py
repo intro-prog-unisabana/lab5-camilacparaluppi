@@ -4,7 +4,7 @@
 def get_daily_steps():
     """Return list of daily steps."""
     steps = input("Enter your daily steps for 7 days separated by spaces: ")
-    step_list = steps.split
+    step_list = steps.split()
     step_list = [int(s) for s in step_list]
     return step_list
 
