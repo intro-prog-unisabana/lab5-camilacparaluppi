@@ -1,6 +1,6 @@
 from utils import add, sub, multiply, divide, exponent, modulo, floor_divide, absolute
 while True:
-    operacion = input("Which calculation would you like to perform? (add, subtract, multiply, divide, exponent, modulo, floor_divide, absolute, exit):").lower()
+    operacion = input("Which calculation would you like to perform? (add, subtract, multiply, divide, exponent, modulo, floor_divide, absolute, exit): ").lower()
     if operacion == "exit":
         break
     elif operacion not in ["add","subtract","multiply","divide","exponent","modulo","floor_divide","absolute"]:
@@ -9,12 +9,12 @@ while True:
     elif operacion == "exit":
         break
     elif operacion == "absolute":
-        num = float(input("Enter the number:"))
+        num = float(input("Enter the number: "))
         result = absolute(num)
         print(f"The result is: {result}")
     else:
-        num1 = float(input("Enter the first number:"))
-        num2 = float(input("Enter the second number:"))
+        num1 = float(input("Enter the first number: "))
+        num2 = float(input("Enter the second number: "))
     
     if operacion == "add":
         result = add(num1, num2)
