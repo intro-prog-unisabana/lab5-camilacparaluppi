@@ -1,7 +1,9 @@
 from utils import add, sub, multiply, divide, exponent, modulo, floor_divide, absolute
 while True:
     operacion = input("Which calculation would you like to perform? (add, subtract, multiply, divide, exponent, modulo, floor_divide, absolute, exit):").lower()
-    if operacion not in ["add","subtract","multiply","divide","exponent","modulo","floor_divide","absolute"]:
+    if operacion == "exit":
+        break
+    elif operacion not in ["add","subtract","multiply","divide","exponent","modulo","floor_divide","absolute"]:
         print("Invalid option!")
         continue
     elif operacion == "exit":
