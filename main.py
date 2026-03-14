@@ -15,17 +15,17 @@ while True:
         num2 = float(input("Enter the second number:"))
     
     if operacion == "add":
-        result = num1 + num2
+        result = add(num1, num2)
     elif operacion == "subtract":
-        result = num1 - num2
+        result = sub(num1, num2)
     elif operacion == "multiply":
-        result = num1 * num2
+        result = multiply(num1, num2)
     elif operacion == "divide":
-        result = num1 / num2
+        result = divide(num1, num2)
     elif operacion == "exponent":
-        result = num1 ** num2
+        result = exponent(num1, num2)
     elif operacion == "modulo":
-        result = num1 % num2
+        result = modulo(num1, num2)
     elif operacion == "floor_divide":
-        result = num1 // num2
+        result = floor_divide(num1, num2)
     print(f"The result is: {result}")
